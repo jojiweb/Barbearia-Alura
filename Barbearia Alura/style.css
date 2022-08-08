@@ -1,12 +1,13 @@
 header {
-    background: #CCCCCC;
-    padding: 20px;
+    background-color: #BBBBBB;
+    padding: 20px 0;
 }
 
-.caixa-header {
+.caixa {
     position: relative;
     width: 940px;
     margin: 0 auto;
+
 }
 
 nav {
@@ -16,87 +17,138 @@ nav {
 }
 
 nav li {
-   display: inline;
-   margin: 0 15px;
-   
+    display: inline;
+    margin: 0 0 0 15px;
 }
 
 nav a {
     text-transform: uppercase;
     color: black;
     font-weight: bold;
-    text-decoration: none;
     font-size: 22px;
+    text-decoration: none;
+
 }
 
-nav a:hover {
-    color: blue;
+nav a:hover{
+    color: #c78c19;
     text-decoration: underline;
 }
 
-#banner {
-    width: 100%;
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
 }
 
-.principal {
-    background: #CCCCCC;
-    padding: 30px;
-}
-
-.titulo-centralizado {
-    text-align: center;
-    font-weight: bold;
-    font-size: 25px;
-}
-
-p {
-    text-align: center;
-    padding: 20px;
-}
-
-#missao {
-    font-size: 20px;
-}
-
-em strong {
-    color: red;
-}
-
-.itens {
-    font-size: 20px;
-    padding: 20px;
-}
-
-.beneficios {
-    background: white;
-    padding: 20px;
-}
-
-.item-home {
+.produtos li {
     display: inline-block;
-    vertical-align: top;
-    width: 20%;
-    margin: 50px 200px 50px;
-    list-style: disc;
-    padding-top: 5%;
-}
-
-.imagembeneficios{
-    width: 30%;
-    padding-left: 10%;
-    padding-top: 5%;
-
-
-}
-
-footer{
     text-align: center;
-    background: url(bg.jpg);
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.produtos li:hover {
+    border-color: #c78c19;
+}
+
+.produtos li:active {
+    border-color: green;
+}
+
+.produtos li:hover h2{
+
+    font-size: 34px;
+
+}
+
+.produtos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-descricao {
+    font-size: 18px;   
+}
+
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    background: url("bg.jpg");
     padding: 40px 0;
 }
 
-.copyright{
-    color: #FFFFFF;
+.copyright {
+    color: white;
     font-size: 13px;
     margin-top: 20px;
+}
+
+main {
+    width: 940px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 40px 0;
+}
+
+form label, form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padrao {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background-color: darkorange;
+    transform: scale(1.2);
+}
+
+table {
+    margin: 20px 0 40px;
+}
+
+thead {
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 8px 15px;
 }
